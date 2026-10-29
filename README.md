@@ -1,42 +1,149 @@
-# Project -  Real Time Twitter Analytics Dashboard - Power BI
+# 📊 Real-Time Twitter Analytics Dashboard | Power BI
 
-**1. Project Overview** - This project focuses on analyzing social media tweet performance using Microsoft Power BI. The dashboard examines content categories, engagement rates, media interactions, audience behaviour, monthly trends, and top-performing tweets. It uses calculated columns, DAX measures, filters, and interactive visualizations to identify useful patterns in social media engagement.
+**Transforming Twitter engagement data into actionable social media insights using Power BI, DAX, and interactive visualizations.**
 
-**2. Objectives** - 
-    Analyze click performance across different tweet content categories.
-    Compare engagement rates for tweets that generated app opens and those that did not.
-    Identify the best days of the week for media interactions.
-    Compare replies, retweets, and likes from June to August 2020.
-    Track monthly engagement trends for media and non-media tweets.
-    Identify the top 10 weekday tweets based on total engagements.
+## 📌 Project Overview
 
-**3. Tools and Technologies**
-    Microsoft Power BI
-    Power Query for data preparation
-    DAX for calculated columns and measures
-    Data visualization and conditional formatting
-    Interactive filters, tooltips, and classification-based colours
+The **Twitter Analytics Dashboard** is an interactive business intelligence project developed using Microsoft Power BI to evaluate tweet performance, audience engagement, content effectiveness, and social media interaction patterns.
 
-**4. Project Tasks and Methodology**
+The dashboard transforms raw tweet-level data into meaningful insights through data preparation, DAX calculations, performance classifications, and interactive visualizations. It helps identify high-performing content, understand audience behaviour, compare media engagement, and evaluate the relationship between impressions, clicks, and interactions.
 
-**Task 1: Tweet Interaction Breakdown by Content Category**
-Tweets were classified into Media, Link, Hashtag, Mixed Content, and Plain Text. Tweets containing multiple content elements were assigned to Mixed Content to prevent double counting. A clustered bar chart compares URL Clicks, User Profile Clicks, and Hashtag Clicks across categories. Total Clicks and Click-Through Rate were calculated using impressions. Categories were classified as Traffic Driven, Profile Interest, Discovery Driven, or Mixed Interaction, with an additional Low Click Efficiency flag for categories below the overall median click-through rate.
+The project demonstrates practical skills in **data analytics, business intelligence, data modeling, KPI development, and dashboard design**.
 
-**Task 2: Engagement Rate Comparison**
-Tweet engagement performance was compared between tweets that generated app opens and tweets that did not. The analysis considered weekdays during business hours, from 9:00 AM to 5:00 PM. Average Engagement Rate, total Impressions, total Engagements, and average App Opens were used to compare the groups. Tweets were classified into High App Impact, App Interest–Low Engagement, High Organic Reach, or Low Performance. Conditional colours and tooltips support detailed analysis.
+## 🎯 Project Objectives
 
-**Task 3: Media Interaction by Day of the Week**
-Media Views and Media Engagement Rate were analyzed for the latest complete quarter available in the dataset. A dual-axis chart displays Media Views as columns and Media Engagement Rate as a line, with weekdays sorted chronologically. Days were classified as Strong Media Day, High Reach–Low Interaction, Niche High-Quality Day, or Weak Media Day. Interaction Spike flags identify days when Media Engagements are at least 20% above the weekday average.
+- Analyze click performance across different tweet content categories.
+- Compare engagement rates between tweets with and without app opens.
+- Identify the best-performing weekdays for media interactions.
+- Compare replies, retweets, and likes across June, July, and August 2020.
+- Track monthly engagement rate trends for media and non-media tweets.
+- Identify the top 10 weekday tweets based on total engagements.
+- Develop classification-based insights to support data-driven social media decisions.
 
-**Task 4: Replies, Retweets and Likes Comparison**
-Replies, Retweets, and Likes were compared by month for June, July, and August 2020. Tweets with no interactions were excluded. Tweets were classified according to their dominant interaction type as Conversation Driven, Virality Driven, Popularity Driven, or Balanced Interaction. Low Interaction flags identify tweets below the dataset median. A supporting visual presents the number and percentage of tweets in each classification.
+## 🛠️ Tech Stack
 
-**Task 5: Monthly Engagement Rate Trend**
-A monthly line-chart analysis compares the average Engagement Rate of media tweets with non-media tweets. A Date table supports chronological month sorting and filtering by year and content type. Monthly classifications include Media Dominant, Non-Media Dominant, and Balanced. An Engagement Decline Alert is used when the overall Engagement Rate decreases for two consecutive months. Tooltips provide tweet counts, impressions, engagement rates, and month-over-month changes.
+| Technology | Application |
+|---|---|
+| Microsoft Power BI | Interactive dashboard development and data visualization |
+| Power Query | Data cleaning, transformation, and preparation |
+| DAX | Calculated columns, measures, KPIs, and classification logic |
+| Data Modeling | Date table, chronological sorting, and analytical relationships |
+| Conditional Formatting | Performance-based colours and visual indicators |
+| Interactive Reporting | Filters, tooltips, drill-down analysis, and rankings |
 
-**Task 6: Top 10 Tweets by Engagement**
-A ranked bar chart identifies the top 10 weekday tweets based on Total Engagements, calculated as Likes plus Retweets plus Replies. Tweet labels, Impressions, and Engagement Rate support performance comparison. Tweets are classified as Highly Shareable, Highly Popular, Conversation Driven, or High Volume–Low Efficiency. Classification-based colours and an explanation of the three highest-ranked tweets help interpret the results.
+## 📈 Dashboard Modules
 
-**5. Key Analytical Outcomes** - The dashboard provides a structured way to compare content performance, click behaviour, app-related engagement, media interactions, monthly trends, and high-performing tweets. Its classifications help distinguish traffic generation, profile interest, content sharing, audience conversation, and engagement efficiency. The findings can support decisions about content selection, posting schedules, app conversion improvement, and strategies for increasing audience interaction. Specific recommendations should be based on the values and patterns observed in the completed dashboard.
+### 1. Tweet Interaction Breakdown by Content Category
 
-**6. Conclusion** - This project demonstrates the application of Power BI, data preparation, DAX calculations, and interactive visualizations to social media analytics. By combining multiple analytical views and classification rules, the dashboard supports a clearer understanding of tweet performance and provides a foundation for data-driven social media decisions.
+**Objective:** Understand how different content types drive clicks and audience interest.
+
+- Categorized tweets as Media, Link, Hashtag, Mixed Content, or Plain Text.
+- Compared URL Clicks, User Profile Clicks, and Hashtag Clicks using a clustered bar chart.
+- Calculated Total Clicks and Click-Through Rate (CTR) using impressions.
+- Classified categories as Traffic Driven, Profile Interest, Discovery Driven, or Mixed Interaction.
+- Flagged categories with below-median CTR for further investigation.
+
+**Business value:** Helps identify content formats that generate traffic, encourage profile visits, and improve content discovery.
+
+### 2. Engagement Rate Comparison
+
+**Objective:** Evaluate engagement performance for tweets associated with app opens.
+
+- Compared tweets with app opens against tweets without app opens.
+- Focused on weekdays during business hours (9:00 AM–5:00 PM).
+- Analyzed Average Engagement Rate, Total Impressions, Total Engagements, and Average App Opens.
+- Classified performance as High App Impact, App Interest–Low Engagement, High Organic Reach, or Low Performance.
+- Used conditional formatting and tooltips to improve interpretability.
+
+**Business value:** Supports evaluation of app-related engagement patterns and helps identify opportunities to improve audience conversion.
+
+### 3. Media Interaction by Day of the Week
+
+**Objective:** Identify weekdays associated with stronger media reach and interaction.
+
+- Analyzed Media Views and Media Engagement Rate for the latest complete quarter available in the dataset.
+- Built a dual-axis visualization combining media views and engagement rate.
+- Sorted weekdays chronologically for meaningful comparison.
+- Classified days as Strong Media Day, High Reach–Low Interaction, Niche High-Quality Day, or Weak Media Day.
+- Flagged interaction spikes when media engagements were at least 20% above the weekday average.
+
+**Business value:** Helps identify promising posting days and distinguish high-reach content from content that generates stronger engagement.
+
+### 4. Replies, Retweets, and Likes Analysis
+
+**Objective:** Compare audience interaction patterns across June, July, and August 2020.
+
+- Compared replies, retweets, and likes by month.
+- Excluded tweets with no recorded interactions from the interaction comparison.
+- Identified dominant interaction types: Conversation Driven, Virality Driven, Popularity Driven, and Balanced Interaction.
+- Flagged tweets below the dataset median for interaction.
+- Added a supporting visual showing the count and percentage of tweets in each classification.
+
+**Business value:** Reveals whether audience responses are primarily driven by conversation, sharing, or popularity.
+
+### 5. Monthly Engagement Rate Trends
+
+**Objective:** Monitor changes in engagement performance over time.
+
+- Compared average engagement rates for media and non-media tweets.
+- Created a Date table to support chronological sorting and year-based filtering.
+- Classified monthly performance as Media Dominant, Non-Media Dominant, or Balanced.
+- Introduced an Engagement Decline Alert when overall engagement rate decreased for two consecutive months.
+- Included tooltip metrics for tweet counts, impressions, engagement rates, and month-over-month changes.
+
+**Business value:** Helps track engagement trends, identify changes in content effectiveness, and support continuous performance monitoring.
+
+### 6. Top 10 Tweets by Total Engagements
+
+**Objective:** Identify the most engaging weekday tweets.
+
+- Ranked the top 10 tweets using Total Engagements.
+- Calculated total engagements as Likes + Retweets + Replies.
+- Displayed tweet labels, impressions, and engagement rates for comparison.
+- Classified tweets as Highly Shareable, Highly Popular, Conversation Driven, or High Volume–Low Efficiency.
+- Used classification-based colours to distinguish engagement patterns and support interpretation of the top three tweets.
+
+**Business value:** Helps identify content characteristics associated with stronger audience interaction and provides direction for future content strategies.
+
+
+## 💡 Key Analytical Outcomes
+
+The dashboard provides a structured framework for evaluating social media performance across content categories, click behaviour, app-related engagement, media interactions, monthly trends, and individual tweet rankings.
+
+Its classification rules help translate numerical metrics into interpretable performance groups, making it easier to investigate:
+
+- Which content categories generate different types of clicks.
+- How engagement patterns differ between tweets with and without app opens.
+- Which weekdays show stronger media reach or interaction.
+- Whether audience engagement is driven primarily by likes, retweets, or replies.
+- How media and non-media engagement rates change over time.
+- Which tweets combine high engagement with comparatively efficient reach.
+
+**The practical outcome:** a reusable analytical framework that can support content planning, posting schedules, engagement optimization, and performance reporting. Actual recommendations should be validated against the completed dashboard's measured results.
+
+## 🧠 Skills Demonstrated
+
+- **Data Analytics:** Exploratory analysis, KPI tracking, trend analysis, and comparative analysis.
+- **Power BI Development:** Interactive reports, charts, slicers, tooltips, and conditional formatting.
+- **DAX:** Calculated columns, measures, ranking logic, threshold-based flags, and classification rules.
+- **Data Preparation:** Power Query transformations and content categorization.
+- **Data Modeling:** Date tables, chronological sorting, and time-based analysis.
+- **Business Intelligence:** Translating social media metrics into interpretable performance indicators.
+- **Data Storytelling:** Designing analytical views to support business-oriented decisions.
+
+## 🚀 Future Enhancements
+
+- Integrate a live or scheduled data pipeline to support regularly refreshed Twitter/X analytics.
+- Add automated refresh monitoring and data-quality validation.
+- Introduce sentiment analysis to evaluate audience responses.
+- Compare engagement across additional content types and time periods.
+- Develop predictive models to estimate tweet engagement.
+- Publish the dashboard through Power BI Service with appropriate access controls.
+
+
+## 👨‍💻 About This Project
+
+This project demonstrates how business intelligence tools can transform social media data into actionable analytical insights. It combines data preparation, DAX-based calculations, interactive visualization, and performance classification to explore how content type, timing, and interaction patterns relate to tweet performance.
+
+
+⭐ If you find this project interesting, feel free to explore the repository and share your feedback.
